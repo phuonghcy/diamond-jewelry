@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
-import './Navbar.css'
+import styles from './Navbar.module.css';
 
-export default function NavBar() {
+export default function Navbar() {
     return (
-        <nav className="menu-container">
+        <nav className={styles.menu_container}>
             <input type="checkbox" aria-label="Toggle menu" />
             <span></span>
             <span></span>
             <span></span>
 
-            <Link to="/" className="menu-logo">
+            <Link to="/" className={styles.menu_logo}>
                 <img src="https://wweb.dev/resources/navigation-generator/logo-placeholder.png" alt="My Awesome Website" />
             </Link>
 
-            <div className="menu">
+            <div className={styles.menu}>
                 <ul>
                     <li>
                         <Link to="/">
