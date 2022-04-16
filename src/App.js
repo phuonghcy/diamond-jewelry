@@ -1,6 +1,6 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
@@ -11,8 +11,8 @@ function App() {
 		<Router>
 			<Navbar />
 			<Routes>
-				<Route path="/" element={<HomePage />} />
-				<Route path="/cart" element={<CartPage />} />
+				<Route exact path="/" element={<HomePage />} />
+				<Route path="/gio-hang" element={<CartPage />} />
 				<Route path="/login" element={<LoginPage />} />
 			</Routes>
 		</Router>
