@@ -1,0 +1,13 @@
+.product_card {
+    background-color: #F7F7F7;
+}
+
+.product_name {
+    font-size: 18px;
+}
+
+.product_price {
+    color: #46CFBE;
+    font-size: 23px;
+    font-style: italic;
+}

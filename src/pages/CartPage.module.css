@@ -1,0 +1,111 @@
+.container {
+    text-align: center;
+}
+
+.cart_header {
+    background-color: #CEE7E5;
+    padding: 50px 0 100px;
+}
+
+.cart_header ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart_header li {
+    display: inline;
+}
+
+.cart_header li:not(:last-child) {
+    padding-right: 10px;
+}
+
+.cart_header li:not(:last-child)::after {
+    content: ">";
+    position: relative;
+    left: 5px;
+}
+
+.cart_header li:last-child {
+    color: #46CFBE;
+}
+
+.cart_body {
+    text-align: center;
+    padding: 50px;
+}
+
+.cart_detail {
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+.cart_detail th {
+    background-color: #46CFBE;
+    padding: 10px;
+}
+
+.cart_detail td {
+    padding: 20px;
+}
+
+.cart_detail button {
+    cursor: pointer;
+}
+
+.remove_button {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+}
+
+.quantity_wrapper input {
+    width: 30px;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+
+.quantity_wrapper button {
+    background-color: white;
+}
+
+.increase_button {
+    border-left: none;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+.decrease_button {
+    border-right: none;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hide Arrows From Input Number */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

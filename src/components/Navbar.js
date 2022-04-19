@@ -10,7 +10,7 @@ export default function Navbar() {
             <span></span>
 
             <Link to="/" className={styles.menu_logo}>
-                <img src="https://wweb.dev/resources/navigation-generator/logo-placeholder.png" alt="My Awesome Website" />
+                <img src={ require("../assets/images/logoipsum-logo-52.png") } alt="logo" />
             </Link>
 
             <div className={styles.menu}>
