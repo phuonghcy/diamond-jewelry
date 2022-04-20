@@ -69,7 +69,7 @@ export default function HomePage() {
             <div className={ styles.contact }>
                 <h3>LIÊN HỆ VỚI CHÚNG TÔI</h3>
                 <form>
-                    <input placeholder="ý kiến của bạn" />
+                    <input placeholder="Ý kiến của bạn" />
                     <button>
                         <ion-icon name="mail"></ion-icon>
                         <span>GỬI ĐI Ý KIẾN</span>

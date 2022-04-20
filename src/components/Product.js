@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom';
 import styles from './Product.module.css';
 
 export default function Product(props) {
-    // format price
+    // format currency
     let formattedPrice = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(props.price);
 
     return (

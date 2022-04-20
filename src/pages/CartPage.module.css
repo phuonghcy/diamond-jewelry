@@ -32,7 +32,7 @@
 
 .cart_body {
     text-align: center;
-    padding: 50px;
+    padding: 50px 200px;
 }
 
 .cart_detail {
@@ -50,62 +50,41 @@
     padding: 20px;
 }
 
-.cart_detail button {
-    cursor: pointer;
+.summary {
+    margin-left: auto;
+    margin-right: 80px;
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #707070;
 }
 
-.remove_button {
+.summary th {
+    color: #46CFBE;
+}
+
+.summary td:first-child {
+    text-align: left;
+    padding-right: 100px;
+
+}
+
+.summary td:last-child {
+    text-align: right;
+}
+
+.summary button {
+    background-color: #46CFBE;
     border: none;
-    background-color: white;
-    font-size: 20px;
+    border-radius: 18px;
+    color: white;
+    padding: 10px 30px;
 }
 
-.quantity_wrapper input {
-    width: 30px;
-    border-left: none;
-    border-right: none;
-    text-align: center;
-}
-
-.quantity_wrapper button {
-    background-color: white;
-}
-
-.increase_button {
-    border-left: none;
-    border-top-right-radius: 28px;
-    border-bottom-right-radius: 28px;
-}
-
-.decrease_button {
-    border-right: none;
-    border-top-left-radius: 28px;
-    border-bottom-left-radius: 28px;
+.summary td[colspan] {
+    padding: 0;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Hide Arrows From Input Number */
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+.center {
+    text-align: center !important;
 }
