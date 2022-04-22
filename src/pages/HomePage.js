@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import styles from './HomePage.module.css';
 import Product from '../components/Product.js';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function HomePage() {
     const products = [
@@ -48,6 +50,7 @@ export default function HomePage() {
 
     return (
         <div className={styles.container}>
+            <Header />
             <div className={styles.banner_container}>
                 <Link to="/trang-suc">
                     <img src={require("../assets/images/banner.png")} alt="summer-sale" />
@@ -76,6 +79,7 @@ export default function HomePage() {
                     </button>
                 </form>
             </div>
+            <Footer />
         </div>
     );
 }

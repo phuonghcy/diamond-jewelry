@@ -1,8 +1,16 @@
-import { Link } from 'react-router-dom';
-import Navbar from './Navbar.js';
+import { Link, useNavigate } from 'react-router-dom';
+import localStorage from 'localStorage';
 import styles from './Header.module.css';
+import Navbar from './Navbar.js';
 
 export default function Header() {
+    const navigate = useNavigate();
+
+    function handleLogout() {
+        localStorage.removeItem("access_token");
+        navigate("/");
+    }
+
     return (
         <div>
             <div className={styles.wrapper}>
@@ -17,13 +25,21 @@ export default function Header() {
                     </li>
                 </ul>
                 <ul className={styles.right}>
-                    <li>
-                        <ion-icon name="log-in-outline"></ion-icon>
-                        <Link to="/login">Đăng nhập</Link>
-                    </li>
+                    {
+                        localStorage.getItem("access_token") ? 
+                        <li>
+                            <ion-icon name="log-in-outline"></ion-icon>
+                            <Link to="/" onClick={handleLogout}>Đăng xuất</Link>
+                        </li> : 
+                        <li>
+                            <ion-icon name="log-in-outline"></ion-icon>
+                            <Link to="/dang-nhap">Đăng nhập</Link>
+                        </li>
+                    }
+                    
                     <li>
                         <ion-icon name="person-outline"></ion-icon>
-                        <Link to="/account">Tài khoản</Link>
+                        <Link to="/tai-khoan">Tài khoản</Link>
                     </li>
                 </ul>
             </div>

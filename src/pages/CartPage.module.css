@@ -1,10 +1,7 @@
-.container {
-    text-align: center;
-}
-
 .cart_header {
     background-color: #CEE7E5;
     padding: 50px 0 100px;
+    text-align: center;
 }
 
 .cart_header ul {

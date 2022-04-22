@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import styles from './CartPage.module.css';
 import CartItem from '../components/CartItem';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function CartPage() {
     const cartData = {
@@ -63,6 +65,7 @@ export default function CartPage() {
 
     return (
         <div className={styles.container}>
+            <Header />
             <div className={styles.cart_header}>
                 <ul>
                     <li>Trang chủ</li>
@@ -129,6 +132,7 @@ export default function CartPage() {
                     </tbody>
                 </table>
             </div>
+            <Footer />
         </div>
     );
 }
