@@ -6,7 +6,7 @@ export default function ContactPage() {
     return (
         <>
             <div className='contact'>
-                <h3>CÁC CÂU HỎI THƯỜNG GẶP VÀ LIÊN HỆ</h3>
+                <h2>CÁC CÂU HỎI THƯỜNG GẶP VÀ LIÊN HỆ</h2>
                 <div className='hr' style={{height: "25px"}}></div>
 
                 <h4>1. CÁC CÂU HỎI THƯỜNG GẶP</h4>
