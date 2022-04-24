@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import CartPage from './pages/CartPage';
 import LoginPage from './pages/LoginPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 				<Route exact path="/" element={<HomePage />} />
 				<Route path="/gio-hang" element={<CartPage />} />
 				<Route path="/dang-nhap" element={<LoginPage />} />
+				<Route path='/lien-he' element={<ContactPage />} />
 			</Routes>
 			<Footer />
 		</Router>
