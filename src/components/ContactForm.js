@@ -4,6 +4,7 @@ import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { useFormik } from 'formik';
 import * as Yup from 'yup'
+import { useState, useEffect } from 'react'
 
 export default function ContactForm() {
     const formik = useFormik({
@@ -27,8 +28,19 @@ export default function ContactForm() {
     
     const handleForm = (event) => {
         event.preventDefault();
+        setCmtList([{name: formik.values.name, email: formik.values.email, content: formik.values.content}, ...cmtList]);
         alert(`The name: ${formik.values.name} ; The Email: ${formik.values.email}; The content: ${formik.values.content}`);
+        formik.values.content = "";
+        formik.values.email = "";
+        formik.values.name = "";
+
     }
+
+    const [cmtList, setCmtList] = useState([]);
+
+    useEffect(() => {
+        console.log("+1 người cmt");
+    }, [cmtList])
 
   return (
     <section>
@@ -66,7 +78,7 @@ export default function ContactForm() {
              {formik.errors.content && (
                 <p className="err-mes" >{formik.errors.content}</p>
             )}
-            <button  appearance='primary' onClick={handleForm} disabled={formik.errors.name || formik.errors.email || !formik.values.content} >Gửi đi <span><FontAwesomeIcon icon={faPaperPlane} /></span></button>
+            <button  appearance='primary' onClick={handleForm} disabled={!formik.values.name || !formik.values.email || !formik.values.content} >Gửi đi <span><FontAwesomeIcon icon={faPaperPlane} /></span></button>
         </form>
     </section>
   )

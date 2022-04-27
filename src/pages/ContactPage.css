@@ -1,4 +1,4 @@
-h4 {
+h3 {
     text-align: left;
     color:#46CFBE;
 }
@@ -8,11 +8,11 @@ h2 {
 }
 
 .item {
-    font-size: 16px;
+    font-size: 14px;
 }
 .item button {
     background-image: linear-gradient(#31ffe5,#23685f);
-    font-size: 20px;
+    font-size: 18px;
     color:white;
     padding: 10px 15px;
     min-width: 400px;
@@ -24,7 +24,7 @@ h2 {
     margin: 20px 0px;
 }
 .contact {
-    margin : 50px 60px;
+    margin : 30px 60px;
 
 }
 

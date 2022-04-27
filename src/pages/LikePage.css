@@ -61,5 +61,16 @@ th,tr,td {
 }
 
 .like-header li:last-child {
-    color: #46CFBE;
+    color: red;
+}
+
+@media screen and (orientation: portrait) and (max-width: 768px) {
+    #delete-button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    #add-button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }

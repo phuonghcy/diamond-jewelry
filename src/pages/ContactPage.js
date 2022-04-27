@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactForm from '../containers/ContactForm'
+import ContactForm from '../components/ContactForm'
 import './ContactPage.css'
 
 export default function ContactPage() {
@@ -9,7 +9,7 @@ export default function ContactPage() {
                 <h2>CÁC CÂU HỎI THƯỜNG GẶP VÀ LIÊN HỆ</h2>
                 <div className='hr' style={{height: "25px"}}></div>
 
-                <h4>1. CÁC CÂU HỎI THƯỜNG GẶP</h4>
+                <h3>1. CÁC CÂU HỎI THƯỜNG GẶP</h3>
                 <div className='question'>
                     <div className='item'>
                         <button >Trang trợ giúp </button>
@@ -35,8 +35,9 @@ export default function ContactPage() {
                     </div>
                 <div className='hr'></div>
 
-                <h4>2. FORM LIÊN HỆ </h4>
+                <h3>2. FORM LIÊN HỆ </h3>
                 <ContactForm />
+                <div className='hr' style={{height: "25px"}}></div>
             </div>
            
         </>

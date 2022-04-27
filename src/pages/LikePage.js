@@ -1,6 +1,7 @@
 import React from 'react'
-import LikeItem from '../components/LikeItem'
 import './LikePage.css'
+import  { useState, useEffect, useCallback } from 'react'
+import LikeItem from '../components/LikeItem'
 
 export default function LikePage() {
     const LikeData = {
@@ -30,9 +31,63 @@ export default function LikePage() {
             price: 765000,
             added_day: '18/04/2022',
             avail: 'Còn hàng'
+          },
+
+          {
+            id: 4,
+            image: "https://picsum.photos/175/120",
+            name: "Đồng hồ Bạc STYLE By PNJ DNA 0000Y000133",
+            price: 765000,
+            added_day: '18/04/2022',
+            avail: 'Còn hàng'
+          },
+
+          {
+            id: 5,
+            image: "https://picsum.photos/175/120",
+            name: "Đồng hồ Bạc STYLE By PNJ DNA 0000Y000133",
+            price: 765000,
+            added_day: '18/04/2022',
+            avail: 'Còn hàng'
           }
         ]
       }
+
+      const [likeList, setLikeList] = useState(LikeData);
+
+      const [likeItem, setLikeItem] = useState('');
+
+      function onRemoveButton(item) {
+        alert('remove');
+        const name = item.name;
+        console.log(name);
+    }
+
+    const onDeleteButtonClick = () => {
+      alert('Đây là nút xóa toàn bộ')
+    }
+
+    const onAddButtonClick =() => {
+      alert("Đây là nút thêm vào giỏ hàng")
+    }
+       
+/*
+      const onAddButtonClick =() => {
+        console.log(likeList);
+        setLikeList(prevState => prevState.items.slice(0,1))
+        alert("Đây là nút thêm vào giỏ hàng")
+      }
+
+
+
+      const onDeleteButtonClick =() => {
+       
+        alert("Đây là nút bỏ toàn bộ danh sách yêu thích")
+      }
+
+      const onRemoveButton = (e) => {
+        alert("Xóa này nha" + e.target.name);
+      }*/
   return (
     <>
       <div className='container'>
@@ -58,17 +113,18 @@ export default function LikePage() {
               </tr>
             </thead>
             <tbody>
-              {
-                LikeData.items.map(item =>
-                  <LikeItem key={item.id} id={item.id} image={item.image} name={item.name} price={item.price}
-                              avail={item.avail} added_day={item.added_day} />
-                )
-              }
+            {
+               likeList.items.map(item =>
+               <LikeItem key={item.id} id={item.id} image={item.image} name={item.name} price={item.price}
+                    avail={item.avail} added_day={item.added_day} />
+              )
+            }
             </tbody>
+              
           </table>
           <div className='div-btn'>
-            <button id='delete-button'>Bỏ tất cả sản phẩm khỏi Danh sách yêu thích</button>
-            <button id='add-button' >Thêm tất cả sản phẩm vào Giỏ hàng</button>
+            <button id='delete-button' onClick={onDeleteButtonClick}>Bỏ tất cả sản phẩm khỏi Danh sách yêu thích</button>
+            <button id='add-button' onClick={onAddButtonClick}>Thêm tất cả sản phẩm vào Giỏ hàng</button>
           </div>
           
         </div>
