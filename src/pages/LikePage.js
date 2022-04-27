@@ -71,23 +71,7 @@ export default function LikePage() {
       alert("Đây là nút thêm vào giỏ hàng")
     }
        
-/*
-      const onAddButtonClick =() => {
-        console.log(likeList);
-        setLikeList(prevState => prevState.items.slice(0,1))
-        alert("Đây là nút thêm vào giỏ hàng")
-      }
 
-
-
-      const onDeleteButtonClick =() => {
-       
-        alert("Đây là nút bỏ toàn bộ danh sách yêu thích")
-      }
-
-      const onRemoveButton = (e) => {
-        alert("Xóa này nha" + e.target.name);
-      }*/
   return (
     <>
       <div className='container'>
