@@ -11,12 +11,13 @@
 }
 .banner {
     width: 50%;
-    height: 50%;
+    height: 60%;
     background:url('../assets/images/signuppage.jpg') no-repeat;
-    background-size:contain;
+    background-size:cover;
     text-align: center;
-    margin: auto 0px;
-    align-items: flex-end;
+    margin: auto 20px;
+    align-items:center;
+
     
 }
 
@@ -25,11 +26,11 @@
     border-radius: 25px;
     background-color: #CEE7E5;
     display: inline-block;
-    padding: 50px 70px;
+    padding: 50px 50px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width: 300px;
+    width: 400px;
 }
 
 .container form h1 {
@@ -65,7 +66,7 @@
     padding: 10px;
     font-size: 15px;
     font-weight: bold;
-    margin: 10px 0px;
+    margin: 20px 0px;
 }
 
 .third_party_wrapper {

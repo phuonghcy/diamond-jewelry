@@ -1,0 +1,17 @@
+#remove-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+#pay-button {
+    border: none;
+    font-size: 1.5rem;
+    background-color: #46CFBE ;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: auto;
+}
+tr,td {
+    border: 1px solid black;
+}
