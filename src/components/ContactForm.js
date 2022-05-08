@@ -1,5 +1,5 @@
 import React from 'react'
-import  './ContactForm.css'
+import styles from './ContactForm.module.css';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { useFormik } from 'formik';
@@ -32,7 +32,7 @@ export default function ContactForm() {
 
   return (
     <section>
-        <form className="contactform" >
+        <form className={styles.contactform} >
             <label>HỌ VÀ TÊN</label>
             <input 
                 type="text" 
@@ -60,6 +60,7 @@ export default function ContactForm() {
                 type="text"
                 id="content"
                 name="content"
+                className={styles.content}
                 value={formik.values.content}
                 onChange={formik.handleChange}
             />

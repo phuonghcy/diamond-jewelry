@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactForm from '../components/ContactForm'
-import './ContactPage.css'
+import styles from  './ContactPage.module.css'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 

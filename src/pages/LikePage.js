@@ -1,5 +1,5 @@
 import React from 'react'
-import './LikePage.css'
+import styles from './LikePage.module.css'
 import  { useState, useEffect, useCallback } from 'react'
 import LikeItem from '../components/LikeItem'
 import Header from '../components/Header';
@@ -11,46 +11,46 @@ export default function LikePage() {
           {
             id: 1,
             image: "https://picsum.photos/175/120",
-            name: "Đồng hồ Bạc STYLE By PNJ DNA 0000Y000133",
+            name: "Đồng hồ Bạc 1",
             price: 765000,
             added_day: '20/04/2022',
-            avail: 'Còn hàng'
+            avail: true
           },
     
           {
             id: 2,
             image:"https://picsum.photos/175/120",
-            name: "Đồng hồ Bạc STYLE By PNJ DNA 0000Y000133",
+            name: "Đồng hồ Bạc 2",
             price: 765000,
             added_day: '19/04/2022',
-            avail: 'Hết hàng'
+            avail: false
           },
     
           {
             id: 3,
             image: "https://picsum.photos/175/120",
-            name: "Đồng hồ Bạc STYLE By PNJ DNA 0000Y000133",
+            name: "Đồng hồ Bạc 3",
             price: 765000,
             added_day: '18/04/2022',
-            avail: 'Còn hàng'
+            avail: true
           },
 
           {
             id: 4,
             image: "https://picsum.photos/175/120",
-            name: "Đồng hồ Bạc STYLE By PNJ DNA 0000Y000133",
+            name: "Đồng hồ Bạc 4",
             price: 765000,
             added_day: '18/04/2022',
-            avail: 'Còn hàng'
+            avail: true
           },
 
           {
             id: 5,
             image: "https://picsum.photos/175/120",
-            name: "Đồng hồ Bạc STYLE By PNJ DNA 0000Y000133",
+            name: "Đồng hồ Bạc 5",
             price: 765000,
             added_day: '18/04/2022',
-            avail: 'Còn hàng'
+            avail: true
           }
         ]
       }
@@ -70,9 +70,9 @@ export default function LikePage() {
 
   return (
     <>
-      <div className='container'>
+      <div className={styles.container}>
           <Header />
-        <div className='like-header'>
+        <div className={styles.like_header}>
           <ul>
             <li>Trang chủ</li>
             <li>Danh sách yêu thích</li>
@@ -80,8 +80,8 @@ export default function LikePage() {
           <h1>Danh sách yêu thích</h1>
         </div>
 
-        <div className='like-body'>
-          <table className='like-detail' cellPadding="5" cellSpacing="0" >
+        <div className={styles.like_body}>
+          <table className={styles.like_detail} cellPadding="5" cellSpacing="0" >
             <thead>
               <tr>
                 <th></th>
@@ -103,9 +103,9 @@ export default function LikePage() {
             </tbody>
               
           </table>
-          <div className='div-btn'>
-            <button id='delete-button' onClick={onDeleteButtonClick}>Bỏ tất cả sản phẩm khỏi Danh sách yêu thích</button>
-            <button id='add-button' onClick={onAddButtonClick}>Thêm tất cả sản phẩm vào Giỏ hàng</button>
+          <div className={styles.div_btn}>
+            <button id='delete-button' className={styles.delete_button} onClick={onDeleteButtonClick}>Bỏ tất cả sản phẩm khỏi Danh sách yêu thích</button>
+            <button id='add-button' className={styles.add_button} onClick={onAddButtonClick}>Thêm tất cả sản phẩm vào Giỏ hàng</button>
           </div>
           
         </div>

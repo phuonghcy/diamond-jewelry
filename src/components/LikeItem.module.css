@@ -1,9 +1,9 @@
-#remove-button {
+.remove_button {
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
 }
-#pay-button {
+.pay_button {
     border: none;
     font-size: 1.5rem;
     background-color: #46CFBE ;
@@ -14,4 +14,12 @@
 }
 tr,td {
     border: 1px solid black;
+}
+.avail {
+    color: rgb(15, 201, 117);
+    font-weight: bold;
+}
+.notavail {
+color: rgb(201, 15, 15);
+font-weight: bold;
 }
