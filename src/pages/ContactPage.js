@@ -7,8 +7,9 @@ import Footer from '../components/Footer';
 export default function ContactPage() {
     return (
         <>
-            <div className={styles.contact}>
+            
                 <Header />
+                <div className={styles.contact}>
                 <h2>CÁC CÂU HỎI THƯỜNG GẶP VÀ LIÊN HỆ</h2>
                 <div className={styles.hr} style={{height: "25px"}}></div>
 
@@ -41,8 +42,9 @@ export default function ContactPage() {
                 <h3>2. FORM LIÊN HỆ </h3>
                 <ContactForm />
                 <div className={styles.hr} style={{height: "25px"}}></div>
+                </div>
                 <Footer />
-            </div>
+           
            
         </>
   )
