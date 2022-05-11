@@ -70,7 +70,7 @@ export default function LikePage() {
 
   return (
     <>
-      <div className={styles.container}>
+      <div className={styles.like_container}>
           <Header />
         <div className={styles.like_header}>
           <ul>

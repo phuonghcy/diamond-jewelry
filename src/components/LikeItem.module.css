@@ -3,23 +3,27 @@
     border: none;
     font-size: 1.5rem;
 }
+
 .pay_button {
     border: none;
     font-size: 1.5rem;
-    background-color: #46CFBE ;
+    background-color: #46CFBE;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     padding: auto;
 }
-tr,td {
+
+.like_item td {
     border: 1px solid black;
 }
+
 .avail {
     color: rgb(15, 201, 117);
     font-weight: bold;
 }
+
 .notavail {
-color: rgb(201, 15, 15);
-font-weight: bold;
+    color: rgb(201, 15, 15);
+    font-weight: bold;
 }

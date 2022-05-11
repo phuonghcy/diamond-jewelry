@@ -1,17 +1,18 @@
 .contactform {
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin-top: 20px;
     font-weight: 500;
     font-size: 15px;
-    margin:50px auto;
+    margin: 50px auto;
     width: 50%;
     max-width: 600px;
     min-width: 350px;
     background-color: #fafafa;
     padding: 30px;
 }
-label {
+
+.contactform label {
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -23,6 +24,7 @@ label {
     width: 40%;
     min-width: 350px;
 }
+
 .content {
     width: 100%;
     max-width: 600px;
@@ -33,7 +35,7 @@ label {
 .contactform button {
     align-self: flex-start;
     padding: 10px 20px;
-    background-color: #46cfbe ;
+    background-color: #46cfbe;
     color: white;
     border: none;
     width: 40%;
@@ -41,6 +43,7 @@ label {
     margin-top: 20px;
     font-size: 16px;
 }
+
 .err-mes {
     color: red;
     font-size: 10px;

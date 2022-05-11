@@ -1,10 +1,10 @@
-.container {
+.like_container {
     margin: 20px 0.1%;
    
 }
 
 
-table {
+.like_container table {
     width: 100%;
     border: 1px solid black;
     text-align: center;
@@ -39,7 +39,7 @@ table {
 .add_button {
     background-color: #46fcbe;
 }
-thead th {
+.like_detail thead th {
     border: 1px solid black;  
 }
 
